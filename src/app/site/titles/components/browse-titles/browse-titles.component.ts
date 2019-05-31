@@ -22,6 +22,8 @@ import {Settings} from '../../../../../common/core/config/settings.service';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnDestroy {
+    qualityList: string[] = ['DVD Minőség', 'Mozis'];
+    lanList: string[] = ['Magyar', 'Angol'];
     @ViewChild('genreList') genreList: MatSelectionList;
     @Select(BrowseTitleState.titles) titles$: Observable<Title[]>;
     @Select(BrowseTitleState.doesNotHaveResults) doesNotHaveResults$: Observable<boolean>;

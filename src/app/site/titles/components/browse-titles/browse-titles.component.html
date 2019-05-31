@@ -3,7 +3,7 @@
 <ad-host slot="ads.shared" class="shared-ad-host"></ad-host>
 
 <mat-sidenav-container class="container main-container">
-    <mat-sidenav class="sidebar" [mode]="breakpoints.isMobile$.value ? 'over' : 'side'" [opened]="true" [fixedInViewport]="breakpoints.isMobile$.value" #sidenav>
+    <mat-sidenav class="sidebar" [mode]="breakpoints.isMobile$.value ? 'over' : 'side'" [opened]="false" [fixedInViewport]="breakpoints.isMobile$.value" #sidenav>
         <form [formGroup]="form">
             <div class="filter-container input-container">
                 <label class="filter-header" for="type" trans>Title Type</label>
@@ -13,6 +13,7 @@
                     <option value="series" trans>TV Series</option>
                 </select>
             </div>
+            
             <div class="filter-container input-container">
                 <label class="filter-header" for="links_language" trans>Title Link language</label>
                 <select name="links_language" id="links_language" formControlName="links_language">
@@ -21,6 +22,17 @@
                     <option value="Angol" trans>Angol</option>
                 </select>
             </div>
+
+            <div class="genres-filter filter-container">
+                    <label class="filter-header" for="links_language" trans>Title Link language</label>
+                    <mat-form-field>
+                            <mat-label>Kategóriák</mat-label>
+                            <mat-select formControlName="genre" multiple>
+                              <mat-option *ngFor="let genre of genres$ | async" [value]="genre">{{genre}}</mat-option>
+                            </mat-select>
+                    </mat-form-field>
+                </div>
+
 
             <div class="genres-filter filter-container">
                 <div class="filter-header" trans>With selected links quality</div>
@@ -89,6 +101,72 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <div class="items-container">
+            <div  *ngIf="!breakpoints.isMobile$.value" class="reszletes" >
+                <form [formGroup]="form">
+                    <mat-grid-list cols="3" rowHeight="10:2">
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                    <div class="name"><label class="filter-header" for="type" trans>Típus</label></div>
+                                    <div class="action">
+                                            <select name="type" id="type" formControlName="type">
+                                                    <option [ngValue]="null" trans>Összes</option>
+                                                    <option value="movie" trans>Csak film</option>
+                                                    <option value="series" trans>Csak sorozat</option>
+                                            </select>
+                                    </div>
+                                </div>
+                        </mat-grid-tile>
+
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>Minőség</label></div>
+                                        <div class="action">
+                                                <select name="links_quality" id="links_quality" formControlName="links_quality">
+                                                        <option [ngValue]="null" trans>Összes</option>
+                                                        <option *ngFor="let quality of qualityList" [value]="quality" trans>{{quality}}</option>
+                                                </select>
+                                        </div>
+                                </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>Nyelv</label></div>
+                                        <div class="action">
+                                                <select name="links_language" id="links_language" formControlName="links_language">
+                                                        <option [ngValue]="null" trans>Összes</option>
+                                                        <option *ngFor="let lan of lanList" [value]="lan" trans>{{lan}}</option>
+                                                </select>
+                                        </div>
+                                </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>Kategóriák</label></div>
+                                        <div class="action">
+                                                <mat-select formControlName="genre" multiple>
+                                                        <mat-option *ngFor="let genre of genres$ | async" [value]="genre">{{genre}}</mat-option>
+                                                </mat-select>
+                                        </div>
+                                    </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>ÉV</label></div>
+                                        <div class="action"><range-slider [min]="1880" [max]="currentYear()" [step]="1" formControlName="released"></range-slider>
+                                        </div>
+                                    </div>
+                        </mat-grid-tile>   
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>Rating</label></div>
+                                        <div class="action"><range-slider [min]="1" [max]="10" [step]="0.1" [float]="true" formControlName="score"></range-slider>
+                                        </div>
+                                    </div>
+                        </mat-grid-tile>            
+                    </mat-grid-list>
+                </form>
+            </div>
+
             <div class="header">
                 <h1 trans>Browse</h1>
                 <div class="applied-filters">

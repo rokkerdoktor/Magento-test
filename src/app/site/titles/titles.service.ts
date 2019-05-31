@@ -40,12 +40,12 @@ export class TitlesService {
     constructor(private http: AppHttpClient) {}
 
     public get(titleId: number, queryParams?: GetTitleQueryParams): BackendResponse<GetTitleResponse> {
-        /* return this.http.get('http://localhost/devmate/secure/titles/' + titleId, queryParams); */
+        /*return this.http.get('http://dev.mate/secure/titles/' + titleId, queryParams); */
         return this.http.get('titles/' + titleId, queryParams);
     }
 
     public getAll(queryParams?: BrowseTitlesQueryParams): PaginatedBackendResponse<Title> {
-        /* return this.http.get('http://localhost/devmate/secure/titles', queryParams); */
+        /* return this.http.get('http://dev.mate/secure/titles', queryParams); */
         return this.http.get('titles', queryParams);
     }
 

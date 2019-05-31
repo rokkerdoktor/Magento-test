@@ -10,6 +10,7 @@ import {
     MatAutocompleteModule, MatButtonToggleModule, MatDialogModule,
     MatExpansionModule,
     MatListModule,
+    MatSelectModule,
     MatSidenavModule, MatSlideToggleModule,
     MatTableModule, MatTabsModule
 } from '@angular/material';
@@ -71,7 +72,7 @@ import { ImageGalleryOverlayComponent } from './shared/image-gallery-overlay/ima
 import { ImportMediaModalComponent } from './shared/import-media-modal/import-media-modal.component';
 import {HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
 import {AppHammerGestureConfig} from './app-hammer-gesture-config';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
     imports: [
         CommonModule,
@@ -80,6 +81,8 @@ import {AppHammerGestureConfig} from './app-hammer-gesture-config';
         ChipInputModule,
 
         // material
+        MatSelectModule,
+        MatGridListModule,
         MatAutocompleteModule,
         MatSidenavModule,
         MatExpansionModule,

@@ -8,7 +8,7 @@ media-grid {
 
   &.full-width {
     @media only screen and (min-width: $xsmall) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
 
     @media only screen and (min-width: $medium) {
@@ -16,11 +16,20 @@ media-grid {
     }
 
     @media only screen and (min-width: $large) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
 
     @media only screen and (min-width: $xlarge) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media only screen and (min-width: $xxlarge) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media only screen and (min-width: $xxxlarge) {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    @media only screen and (min-width: $xxxxlarge) {
+      grid-template-columns: repeat(9, 1fr);
     }
   }
 
@@ -35,6 +44,18 @@ media-grid {
 
     @media only screen and (min-width: $large) {
       grid-template-columns: repeat(4, 1fr);
+    }
+    @media only screen and (min-width: $xlarge) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media only screen and (min-width: $xxlarge) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media only screen and (min-width: $xxxlarge) {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    @media only screen and (min-width: $xxxxlarge) {
+      grid-template-columns: repeat(8, 1fr);
     }
   }
 
