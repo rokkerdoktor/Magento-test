@@ -59,7 +59,7 @@ export class Bootstrapper {
         return new Promise((resolve, reject) => {
              const url = this.settings.getBaseUrl() + 'secure/bootstrap-data'; 
             /*const url ='http://dev.mate/secure/bootstrap-data'; */
-           /*  const url ='http://localhost/devmate/secure/bootstrap-data'; */
+            /* const url ='http://localhost/devmate/secure/bootstrap-data'; */
             this.http.get(url).subscribe(response => {
                 this.handleData(response['data']);
                 resolve();

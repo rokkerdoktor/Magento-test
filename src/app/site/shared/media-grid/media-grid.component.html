@@ -2,6 +2,30 @@
     <media-image [src]="item.poster" size="medium" [link]="urls.mediaItem(item)"></media-image>
     <figcaption>
         <a class="title" [routerLink]="urls.mediaItem(item)">{{item.name}}</a>
-        <genre-widget [genres]="item.genres" [limit]="3" *ngIf="!isPerson(item)"></genre-widget>
+        <hr>
+        <div  class="rating"><mat-icon svgIcon="thumb-up"></mat-icon> <span>{{((item.rating/10)*100).toFixed(0)}}%</span></div>
+        <div class="details">
+            <div class="row">
+                <div class="name">Nyelv:</div>
+                <div class="data">{{item.links_language}}</div>
+            </div>
+            <div class="row">
+                    <div class="name">Minőség:</div>
+                    <div class="data">{{item.links_quality}}</div>
+            </div>
+ 
+        </div>
+        <div [routerLink]="urls.mediaItem(item)" class="bottom">
+            <div class="action">
+                <div class="icon">
+                        <mat-icon svgIcon="play-arrow"></mat-icon>
+                </div>
+                <div class="text">
+                    Nézd online
+                </div>
+            </div>
+        </div>
+        
+        <genre-widget [genres]="item.genres" [limit]="3" *ngIf="isPerson(item)"></genre-widget>
     </figcaption>
 </figure>
