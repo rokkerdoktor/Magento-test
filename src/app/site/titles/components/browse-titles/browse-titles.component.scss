@@ -15,6 +15,7 @@ browse-titles {
   .mat-sidenav-container {
     background-color: $site-bg-color-100;
     color: inherit;
+    max-width: 100%;
   }
 
   .mat-sidenav-content {
@@ -183,7 +184,7 @@ browse-titles {
       }
 
       .clear-all-filters-button {
-        margin-left: 20px;
+        margin-left: 110px;
         padding: 0 8px 0 10px;
 
         .mat-icon {

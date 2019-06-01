@@ -24,6 +24,8 @@ import {Settings} from '../../../../../common/core/config/settings.service';
 export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnDestroy {
     qualityList: string[] = ['DVD Minőség', 'Mozis'];
     lanList: string[] = ['Magyar', 'Angol'];
+    breakpoint: number;
+    public show_dialog : boolean = false;
     @ViewChild('genreList') genreList: MatSelectionList;
     @Select(BrowseTitleState.titles) titles$: Observable<Title[]>;
     @Select(BrowseTitleState.doesNotHaveResults) doesNotHaveResults$: Observable<boolean>;
@@ -62,6 +64,7 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
     }
 
     ngOnInit() {
+        this.breakpoint = (window.innerWidth <= 600) ? 1 : 3;
         super.ngOnInit();
 
         // reload titles when form is updated
@@ -121,4 +124,11 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
     protected isLoading() {
         return this.store.selectSnapshot(BrowseTitleState.loading);
     }
+        toggle() {
+            this.show_dialog = !this.show_dialog;
+        }
+        onResize(event) {
+            this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 6;
+          }
+
 }

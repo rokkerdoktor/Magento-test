@@ -3,107 +3,11 @@
 <ad-host slot="ads.shared" class="shared-ad-host"></ad-host>
 
 <mat-sidenav-container class="container main-container">
-    <mat-sidenav class="sidebar" [mode]="breakpoints.isMobile$.value ? 'over' : 'side'" [opened]="false" [fixedInViewport]="breakpoints.isMobile$.value" #sidenav>
-        <form [formGroup]="form">
-            <div class="filter-container input-container">
-                <label class="filter-header" for="type" trans>Title Type</label>
-                <select name="type" id="type" formControlName="type">
-                    <option [ngValue]="null" trans>All Types</option>
-                    <option value="movie" trans>Movie</option>
-                    <option value="series" trans>TV Series</option>
-                </select>
-            </div>
-            
-            <div class="filter-container input-container">
-                <label class="filter-header" for="links_language" trans>Title Link language</label>
-                <select name="links_language" id="links_language" formControlName="links_language">
-                    <option [ngValue]="null" trans>All Types</option>
-                    <option value="Magyar szinkron" trans>Magyar szinkron</option>
-                    <option value="Angol" trans>Angol</option>
-                </select>
-            </div>
-
-            <div class="genres-filter filter-container">
-                    <label class="filter-header" for="links_language" trans>Title Link language</label>
-                    <mat-form-field>
-                            <mat-label>Kategóriák</mat-label>
-                            <mat-select formControlName="genre" multiple>
-                              <mat-option *ngFor="let genre of genres$ | async" [value]="genre">{{genre}}</mat-option>
-                            </mat-select>
-                    </mat-form-field>
-                </div>
-
-
-            <div class="genres-filter filter-container">
-                <div class="filter-header" trans>With selected links quality</div>
-                <mat-selection-list formControlName="links_quality">
-                    <mat-list-option value="BDRip" checkboxPosition="before">BDRip</mat-list-option>
-                    <mat-list-option value="Mozis" checkboxPosition="before">Mozis</mat-list-option>
-
-                </mat-selection-list>
-            </div>
-
-
-            <div class="filter-container" *ngIf="settings.get('browse.show_streamable_filter')">
-                <mat-slide-toggle formControlName="onlyStreamable" trans>Only Streamable</mat-slide-toggle>
-            </div>
-
-            <div class="genres-filter filter-container">
-                <div class="filter-header" trans>With selected genres</div>
-                <mat-selection-list formControlName="genre">
-                    <mat-list-option [value]="genre" *ngFor="let genre of genres$ | async" checkboxPosition="before">{{genre}}</mat-list-option>
-                </mat-selection-list>
-            </div>
-
-            <div class="slider-filter filter-container">
-                <div class="filter-header" trans>Released In</div>
-                <range-slider [min]="1880" [max]="currentYear()" [step]="1" formControlName="released"></range-slider>
-            </div>
-
-            <div class="slider-filter filter-container">
-                <div class="filter-header" trans>User Score</div>
-                <range-slider [min]="1" [max]="10" [step]="0.1" [float]="true" formControlName="score"></range-slider>
-            </div>
-
-            <div class="slider-filter filter-container">
-                <div class="filter-header" trans>Runtime</div>
-                <range-slider [min]="1" [max]="255" [step]="1" affix="min" formControlName="runtime"></range-slider>
-            </div>
-
-            <div class="filter-container input-container">
-                <div class="filter-header" trans>Country</div>
-                <select id="country" formControlName="country">
-                    <option [ngValue]="null" trans>All Countries</option>
-                    <option [value]="option.code" *ngFor="let option of countries$ | async">{{option.name}}</option>
-                </select>
-            </div>
-
-            <div class="filter-container input-container">
-                <div class="filter-header" trans>Language</div>
-                <select id="language" formControlName="language">
-                    <option [ngValue]="null" trans>All Languages</option>
-                    <option [value]="option.code" *ngFor="let option of languages$ | async">{{option.name}}</option>
-                </select>
-            </div>
-
-            <div class="filter-container">
-                <div class="filter-header" trans>Age Ratings</div>
-                <mat-button-toggle-group formControlName="certification" aria-label="Certification">
-                    <mat-button-toggle [value]="certification" *ngFor="let certification of certifications$ | async">{{certification}}</mat-button-toggle>
-                </mat-button-toggle-group>
-            </div>
-
-            <button class="reset-filters-btn" mat-stroked-button (click)="clearAllFilters()" [disabled]="!(anyFilterActive$ | async)" trans>
-                <mat-icon svgIcon="refresh"></mat-icon>
-                <span trans>Reset Filters</span>
-            </button>
-        </form>
-    </mat-sidenav>
     <mat-sidenav-content>
         <div class="items-container">
-            <div  *ngIf="!breakpoints.isMobile$.value" class="reszletes" >
-                <form [formGroup]="form">
-                    <mat-grid-list cols="3" rowHeight="10:2">
+            <div *ngIf="show_dialog" class="reszletes" >
+                <form [formGroup]="form" >
+                    <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="10:2">
                         <mat-grid-tile>
                                 <div class="cucc filter-container input-container">
                                     <div class="name"><label class="filter-header" for="type" trans>Típus</label></div>
@@ -162,7 +66,36 @@
                                         <div class="action"><range-slider [min]="1" [max]="10" [step]="0.1" [float]="true" formControlName="score"></range-slider>
                                         </div>
                                     </div>
-                        </mat-grid-tile>            
+                        </mat-grid-tile>     
+                        <mat-grid-tile>
+                                <div class="cucc filter-container input-container">
+                                        <div class="name"><label class="filter-header" for="type" trans>Játékidő</label></div>
+                                        <div class="action"><range-slider [min]="1" [max]="255" [step]="1" affix="min" formControlName="runtime"></range-slider>
+                                        </div>
+                                    </div>
+                        </mat-grid-tile> 
+                    <mat-grid-tile>
+                        <div class="cucc filter-container input-container">
+                                <div class="name"><label class="filter-header" for="type" trans>Ország</label></div>
+                                <div class="action">
+                                        <select id="country" formControlName="country">
+                                                <option [ngValue]="null" trans>Összes ország</option>
+                                                <option [value]="option.code" *ngFor="let option of countries$ | async">{{option.name}}</option>
+                                            </select>
+                                </div>
+                            </div>
+                </mat-grid-tile>  
+                <mat-grid-tile>
+                    <div class="cucc filter-container input-container">
+                            <div class="name"><label class="filter-header" for="type" trans>Besorolás</label></div>
+                            <div class="action">
+                                    <mat-button-toggle-group formControlName="certification" aria-label="Certification">
+                                            <mat-button-toggle [value]="certification" *ngFor="let certification of certifications$ | async">{{certification}}</mat-button-toggle>
+                                    </mat-button-toggle-group>
+                            </div>
+                    </div>
+            </mat-grid-tile>  
+                               
                     </mat-grid-list>
                 </form>
             </div>
@@ -170,8 +103,9 @@
             <div class="header">
                 <h1 trans>Browse</h1>
                 <div class="applied-filters">
-                    <button class="toggle-filters-button" mat-icon-button (click)="sidenav.toggle()" *ngIf="breakpoints.isMobile$.value">
-                        <mat-icon svgIcon="menu"></mat-icon>
+                    <button class="toggle-filters-button" mat-icon-button (click)="toggle()">
+                        <mat-icon svgIcon="search"></mat-icon>
+                        <span  *ngIf="!breakpoints.isMobile$.value" class="label" trans>Részletes kereső</span>
                     </button>
                     <button mat-stroked-button class="clear-all-filters-button" (click)="clearAllFilters()" *ngIf="anyFilterActive$ | async">
                         <span class="text" trans>Reset Filters</span>

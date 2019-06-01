@@ -49,13 +49,13 @@ media-grid {
       grid-template-columns: repeat(6, 1fr);
     }
     @media only screen and (min-width: $xxlarge) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-    @media only screen and (min-width: $xxxlarge) {
       grid-template-columns: repeat(7, 1fr);
     }
-    @media only screen and (min-width: $xxxxlarge) {
+    @media only screen and (min-width: $xxxlarge) {
       grid-template-columns: repeat(8, 1fr);
+    }
+    @media only screen and (min-width: $xxxxlarge) {
+      grid-template-columns: repeat(10, 1fr);
     }
   }
 
