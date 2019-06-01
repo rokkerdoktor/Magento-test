@@ -40,8 +40,8 @@ export class TitlesService {
     constructor(private http: AppHttpClient) {}
 
     public get(titleId: number, queryParams?: GetTitleQueryParams): BackendResponse<GetTitleResponse> {
-        return this.http.get('http://dev.mate/secure/titles/' + titleId, queryParams);
-        return this.http.get('http://localhost/devmate/secure/titles/' + titleId, queryParams);
+       /*  return this.http.get('http://dev.mate/secure/titles/' + titleId, queryParams); */
+       /*  return this.http.get('http://localhost/devmate/secure/titles/' + titleId, queryParams); */
         return this.http.get('titles/' + titleId, queryParams);
     }
 
