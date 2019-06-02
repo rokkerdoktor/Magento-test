@@ -61,6 +61,34 @@ media-grid {
       grid-template-columns: repeat(10, 1fr);
     }
   }
+  &.person {
+    @media only screen and (min-width: $xsmall) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (min-width: $medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: $large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (min-width: $xlarge) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (min-width: $xxlarge) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (min-width: $xxxlarge) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (min-width: $xxxxlarge) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media only screen and (min-width: $ultra) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
 
   &.small-titles {
     .item figcaption .title {
@@ -109,6 +137,10 @@ media-grid {
       }
       .details{
         margin-top:10px;
+        display:block;
+        @media only screen and (max-width: 600px) {
+          display:none;
+        }
         .row{
           float:left;
           width:100%;
@@ -149,6 +181,7 @@ media-grid {
 
       }
       .title{
+        cursor: default;
         text-align: left;
         font-size: 2rem;
       }

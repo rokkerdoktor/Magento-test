@@ -1,17 +1,17 @@
 <figure class="item" *ngFor="let item of items">
     <media-image [src]="item.poster" size="medium" [link]="urls.mediaItem(item)"></media-image>
     <figcaption>
-        <a class="title" [routerLink]="urls.mediaItem(item)">{{item.name}}</a>
+        <span class="title">{{item.name}}</span>
         <hr>
-        <div  class="rating"><mat-icon svgIcon="thumb-up"></mat-icon> <span>{{((item.rating/10)*100).toFixed(0)}}%</span></div>
+        <div *ngIf="item.rating"  class="rating"><mat-icon svgIcon="thumb-up"></mat-icon> <span>{{((item.rating/10)*100).toFixed(0)}}%</span></div>
         <div class="details">
-            <div class="row">
+            <div *ngIf="item.links_language" class="row">
                 <div class="name">Nyelv:</div>
-                <div class="data">{{item.links_language}}</div>
+                <div   class="data">{{item.links_language}}</div>
             </div>
-            <div class="row">
+            <div *ngIf="item.links_language" class="row">
                     <div class="name">Minőség:</div>
-                    <div class="data">{{item.links_quality}}</div>
+                    <div  class="data">{{item.links_quality}}</div>
             </div>
  
         </div>

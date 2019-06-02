@@ -22,7 +22,7 @@ export class PeopleService {
     public getAll(params: {perPage?: number, page?: number, mostPopular?: boolean}): PaginatedBackendResponse<Person> {
         return this.http.get('people', params);
     }
-
+    
     public get(id: number): BackendResponse<GetPersonResponse> {
         return this.http.get('people/' + id);
     }

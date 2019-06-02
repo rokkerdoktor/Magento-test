@@ -44,7 +44,7 @@
 
         <div class="known-for" *ngIf="(knownFor$ | async).length">
             <div class="right-col-title" trans>Known For</div>
-            <media-grid [items]="knownFor$ | async" class="partial-width small-titles"></media-grid>
+            <media-grid [items]="knownFor$ | async" class="person small-titles"></media-grid>
         </div>
 
         <div class="credits-container">
