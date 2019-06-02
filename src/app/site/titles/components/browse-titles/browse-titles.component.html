@@ -6,7 +6,7 @@
     <mat-sidenav-content>
         <div class="items-container">
             <div *ngIf="show_dialog" class="reszletes" >
-                <form [formGroup]="form"  >
+                <form [formGroup]="form" (window:resize)="onResize($event)" >
                     <mat-grid-list  cols="{{gridcols}}" rowHeight="10:2">
                         <mat-grid-tile>
                                 <div class="cucc filter-container input-container">

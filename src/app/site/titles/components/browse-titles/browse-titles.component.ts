@@ -141,4 +141,22 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
             this.show_dialog = !this.show_dialog;
         }
 
+        onResize(event) {
+            const element = event.target.innerWidth;
+            if (element <= 450) { // 768px portrait
+                this.gridcols = 1;
+              }else if(element <= 650){
+                  this.gridcols=2;
+              }else if(element <= 850){
+                this.gridcols=3;
+            }else if(element <= 1366){
+                this.gridcols=4;
+            }
+            else if(element<= 2000){
+                this.gridcols=4;
+            }else if(element <= 3000){
+                this.gridcols=8;
+            }
+          }
+
 }
