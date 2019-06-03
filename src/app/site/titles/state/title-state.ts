@@ -82,6 +82,11 @@ export class TitleState {
     }
 
     @Selector()
+    static links(state: TitleStateModel) {
+        return state.title.links;
+    }
+
+    @Selector()
     static relatedTitles(state: TitleStateModel) {
         return state.related;
     }
