@@ -1,0 +1,174 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html/mate/sourcecode
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-page-container.component.html
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.scss
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-page-container.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.scss
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.html
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/state/title-state.ts
+> git show :src/app/site/titles/titles.service.ts
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-page-container.component.html
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.ts
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :src/app/models/title.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/models/link.ts
+> git ls-files --stage -- src/app/models/
+> git check-ignore -z --stdin
+> git show :src/app/models/image.ts
+> git show :src/app/models/link.ts
+> git ls-files --stage -- src/app/models/
+> git show :src/app/models/list.ts
+> git show :src/app/models/link.ts
+> git ls-files --stage -- src/app/models/
+> git show :src/app/models/title.ts
+> git show :src/app/models/link.ts
+> git ls-files --stage -- src/app/models/
+> git show :src/app/models/title.ts
+> git show :src/app/models/link.ts
+> git ls-files --stage -- src/app/models/
+> git show :src/app/site/titles/title-page-container/title-primary-details-panel/title-primary-details-panel.component.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git ls-files --stage -- src/app/site/titles/title-page-container/title-links/

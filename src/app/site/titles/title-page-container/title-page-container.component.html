@@ -11,6 +11,9 @@
         <videos-panel [mediaItem]="title" *ngIf="title.show_videos || settings.get('titles.show_videos_panel')"></videos-panel>
 
         <mat-tab-group color="accent" animationDuration="0ms">
+            <mat-tab [label]="'Links' | trans">
+                <title-links></title-links>
+            </mat-tab>
             <mat-tab [label]="'Cast' | trans">
                 <title-cast-panel></title-cast-panel>
             </mat-tab>

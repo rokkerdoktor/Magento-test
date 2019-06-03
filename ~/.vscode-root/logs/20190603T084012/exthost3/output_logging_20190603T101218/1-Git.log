@@ -1,0 +1,71 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html/julius
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse JK-383
+> git rev-parse --symbolic-full-name JK-383@{u}
+fatal: no upstream configured for branch 'JK-383'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :vendor/magento/module-catalog/Ui/DataProvider/Product/Form/Modifier/CustomOptions.php
+> git ls-files --stage -- vendor/magento/module-catalog/Ui/DataProvider/Product/Form/Modifier/
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/design/frontend/Smartwave/porto/Magento_GroupedProduct/templates/product/view/type/grouped.phtml
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extend.less
+> git ls-files --stage -- app/design/frontend/Smartwave/porto/web/css/source/
+> git check-ignore -z --stdin
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extends.less
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extend.less
+> git ls-files --stage -- app/design/frontend/Smartwave/porto/web/css/source/
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extends.less
+> git show :app/design/frontend/Smartwave/porto/Magento_GroupedProduct/templates/product/view/type/grouped.phtml
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extend.less
+> git ls-files --stage -- app/design/frontend/Smartwave/porto/web/css/source/
+> git show :vendor/magento/module-catalog/Ui/DataProvider/Product/Form/Modifier/CustomOptions.php
+> git ls-files --stage -- vendor/magento/module-catalog/Ui/DataProvider/Product/Form/Modifier/
+> git show :app/design/frontend/Smartwave/porto/Magento_GroupedProduct/templates/product/view/type/grouped.phtml
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extends.less
+> git show :app/design/frontend/Smartwave/porto/Magento_GroupedProduct/templates/product/view/type/grouped.phtml
+> git show :app/design/frontend/Smartwave/porto/web/css/source/_extends.less
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/design/frontend/Smartwave/porto/Smartwave_Porto/templates/html/filter_toggle.phtml
+> git show :app/design/frontend/Smartwave/porto/Smartwave_Porto/templates/html/custom_notice.phtml
+> git show :app/design/frontend/Smartwave/porto/Smartwave_Porto/templates/html/custom_link.phtml
+> git show :app/design/frontend/Smartwave/porto/Magento_GroupedProduct/templates/product/view/type/grouped.phtml

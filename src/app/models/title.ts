@@ -1,6 +1,7 @@
 import {Person} from './person';
 import {Video} from './video';
 import {Image} from './image';
+import {Link} from './link';
 import {MEDIA_TYPE} from '../site/media-type';
 import {Episode} from './episode';
 import {Season} from './season';
@@ -53,6 +54,7 @@ export class Title {
     season?: Season;
     seasons?: Season[];
     reviews?: Review[];
+    links?: Link[];
     language: string;
     show_videos: boolean;
     links_language:string;

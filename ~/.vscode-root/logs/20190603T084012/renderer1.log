@@ -1,0 +1,4 @@
+[2019-06-03 08:40:14.799] [renderer1] [error] Inotify limit reached (ENOSPC)
+[2019-06-03 08:40:15.712] [renderer1] [info] no standard startup: not running latest version
+[2019-06-03 08:40:23.874] [renderer1] [info] no standard startup: not a new window
+[2019-06-03 09:11:01.828] [renderer1] [error] Inotify limit reached (ENOSPC)
