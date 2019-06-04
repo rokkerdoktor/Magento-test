@@ -1,3 +1,5 @@
+import {Title} from './title';
+
 export class Link {
     id: number;
     title_id: number;
@@ -7,7 +9,7 @@ export class Link {
     label: string;
     quality:string;
     user_name:string;
-
+    title?: Title[];
     constructor(params: Object = {}) {
         for (const name in params) {
             this[name] = params[name];

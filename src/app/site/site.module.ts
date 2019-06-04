@@ -74,6 +74,7 @@ import {HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
 import {AppHammerGestureConfig} from './app-hammer-gesture-config';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { TitleLinksComponent } from './titles/title-page-container/title-links/title-links.component';
+import { LinkplayerComponent } from './linkplayer/linkplayer.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -158,6 +159,7 @@ import { TitleLinksComponent } from './titles/title-page-container/title-links/t
         ImageGalleryOverlayComponent,
         ImportMediaModalComponent,
         TitleLinksComponent,
+        LinkplayerComponent,
     ],
     entryComponents: [
         PlayerComponent,

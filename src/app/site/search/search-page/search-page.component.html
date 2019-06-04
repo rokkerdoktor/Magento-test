@@ -9,17 +9,17 @@
 
     <div class="type-container" *ngIf="(movies$ | async).length">
         <div class="title" trans>Movies</div>
-        <media-grid [items]="movies$ | async" class="full-width small-titles"></media-grid>
+        <media-grid [items]="movies$ | async" class="person small-titles"></media-grid>
     </div>
 
     <div class="type-container" *ngIf="(series$ | async).length">
         <div class="title" trans>Series</div>
-        <media-grid [items]="series$ | async" class="full-width small-titles"></media-grid>
+        <media-grid [items]="series$ | async" class="personh small-titles"></media-grid>
     </div>
 
     <div class="type-container" *ngIf="(people$ | async).length">
         <div class="title" trans>People</div>
-        <media-grid [items]="people$ | async" class="full-width small-titles"></media-grid>
+        <media-grid [items]="people$ | async" class="person small-titles"></media-grid>
     </div>
 </div>
 

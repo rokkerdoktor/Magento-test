@@ -1,0 +1,11 @@
+.cucc{
+    height: 100vh;
+    media-item-header{
+        height: 100%!important;
+        .container{
+            position: absolute; left: 50%;
+            z-index: 99;
+        }
+    }
+
+}

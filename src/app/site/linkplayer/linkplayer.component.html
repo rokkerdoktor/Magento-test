@@ -1,0 +1,10 @@
+
+<div class="cucc" *ngFor="let link of links$ | async" style="height:100vh;">
+  <media-item-header [backdrop]="link.title.backdrop">
+  </media-item-header>
+  <div class="container">
+      {{link.url}}
+    </div>
+</div>
+
+

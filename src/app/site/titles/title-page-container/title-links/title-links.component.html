@@ -11,7 +11,7 @@
       <div class="server">{{server(link.url)}}</div>
       <div class="quality">{{link.quality}}</div>
       <div class="submit">{{link.user_name}}</div>
-      <a href="{{link.url}}" target="_blank"><div class="play">megtekintés</div></a>
+      <a [routerLink]="['/links/',link.id]" ><div class="play">megtekintés</div></a>
   </div>
   </div>
 </ng-container>

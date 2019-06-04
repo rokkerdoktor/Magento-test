@@ -20,7 +20,7 @@ import {NewsArticleComponent} from './news/news-article/news-article.component';
 import {NewsIndexComponent} from './news/news-index/news-index.component';
 import {PeopleIndexComponent} from './people/people-index/people-index.component';
 import {ContactComponent} from '../../common/contact/contact.component';
-
+import {LinkplayerComponent} from './linkplayer/linkplayer.component';
 const routes: Routes = [
     {
         path: '',
@@ -141,7 +141,6 @@ const routes: Routes = [
                 canActivate: [AuthGuard],
                 data: {name: 'userLists'}
             },
-
             // news
             {
                 path: 'news',
@@ -158,6 +157,11 @@ const routes: Routes = [
             {
                 path: 'contact',
                 component: ContactComponent,
+            },
+            // contact
+            {
+                path: 'links/:id',
+                component: LinkplayerComponent,
             }
         ]
     }

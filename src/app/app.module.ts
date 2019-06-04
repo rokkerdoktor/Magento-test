@@ -17,7 +17,6 @@ import {AppState} from './state/app-state';
 import {Bootstrapper} from '../common/core/bootstrapper.service';
 import {AppBootstrapperService} from './app-bootstrapper.service';
 import {environment} from '../environments/environment';
-
 @NgModule({
     declarations: [
         AppComponent,
