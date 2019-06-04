@@ -43,13 +43,13 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/var/www/html/julius",
-                                        "external": "file:///var/www/html/julius",
-                                        "path": "/var/www/html/julius",
+                                        "fsPath": "/var/www/html/mate/files",
+                                        "external": "file:///var/www/html/mate/files",
+                                        "path": "/var/www/html/mate/files",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/var/www/html/julius"
+                                    "label": "/var/www/html/mate/files"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -66,12 +66,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///var/www/html/mate/files",
-                                        "path": "/var/www/html/mate/files",
+                                        "external": "file:///var/www/html/julius",
+                                        "path": "/var/www/html/julius",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/var/www/html/mate/files"
+                                    "label": "/var/www/html/julius"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1372,19 +1372,19 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www/html",
+    "pickerWorkingDir": "/var/www/html/mate",
     "openedPathsList": {
         "workspaces3": [
-            "file:///var/www/html/julius",
             "file:///var/www/html/mate/sourcecode",
-            "file:///var/www/html/mate/files"
+            "file:///var/www/html/mate/files",
+            "file:///var/www/html/julius"
         ],
         "files2": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///var/www/html/mate/files",
-            "backupPath": "/var/www/html/mate/sourcecode/~/.vscode-root/Backups/3839be8c49533d0971feac6c347838d8",
+            "folder": "file:///var/www/html/mate/sourcecode",
+            "backupPath": "/var/www/html/mate/sourcecode/~/.vscode-root/Backups/498f91843b9b1bc44172bb8bd72222fd",
             "uiState": {
                 "mode": 0,
                 "x": 1920,

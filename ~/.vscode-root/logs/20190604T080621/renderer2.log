@@ -1,0 +1,3 @@
+[2019-06-04 08:06:22.002] [renderer2] [error] Failed to watch /var/www/html/mate/sourcecode/~/.vscode-root/User for changes (Error: ENOSPC: no space left on device, watch '/var/www/html/mate/sourcecode/~/.vscode-root/User')
+[2019-06-04 08:06:22.064] [renderer2] [error] Failed to watch /var/www/html/mate/sourcecode/~/.vscode-root/logs/20190604T080621/output_2_20190604T080621 for changes (Error: ENOSPC: no space left on device, watch '/var/www/html/mate/sourcecode/~/.vscode-root/logs/20190604T080621/output_2_20190604T080621')
+[2019-06-04 08:06:24.456] [renderer2] [info] no standard startup: not just one window

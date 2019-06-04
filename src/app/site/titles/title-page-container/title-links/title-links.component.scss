@@ -5,9 +5,12 @@
     padding:5px;
     display: grid;
     grid-template-columns: 15% 20% 20% 35% 10%;
-    background-image: linear-gradient(#385a9a, #7596bc);
-    color:white;
-    text-shadow: 2px 2px 1px black;
+    color: rgba(0,0,0,.54);
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    align-items: center;
+    box-sizing: border-box;
         .language{}
         .server{}
         .submit{}
@@ -15,10 +18,15 @@
     }
 
     .row{
+        min-height: 48px;
         display: grid;
         grid-template-columns: 15% 20% 20% 35% 10%;
-        background:#ebebeb;
-        border:1px solid white;
+        border-width: 0;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        align-items: center;
+        font-size: 14px;
+        color: rgba(0,0,0,.87);
+        box-sizing: border-box;
             .language{    display: grid;
                 align-items: center;}
             .server{    display: grid;
@@ -28,11 +36,12 @@
             .quality{    display: grid;
                 align-items: center;}
             .play{
+                line-height: 45px;
                 display: grid;
                 align-items: center;
                 text-align: right;
                 justify-content: end;
-                color:#c8ccd0;
+                color:#f44336;
                 font-size: 1.7rem;
                 text-transform: uppercase;
             }
@@ -41,7 +50,7 @@
     .row:hover{
         background:#dbd8d8;
         .play:hover{
-            background:#0b4094;
+            background:#f44336;
             color:#dbd8d8;
         }
     }
