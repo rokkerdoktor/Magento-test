@@ -2,8 +2,16 @@
 <div class="cucc" *ngFor="let link of links$ | async" style="height:100vh;">
   <media-item-header [backdrop]="link.title.backdrop">
   </media-item-header>
-  <div class="container">
-      {{link.url}}
+  <div class="container2">
+    <div class="container">
+        <div  class="nincslink" *ngIf="jo(link.url)==='atiranyitas'; else loggedOut">
+          <a class="noiframe" href="{{link.url}}">Megtekintéshez Kattintson ide!</a>
+        </div>  
+        <ng-template #loggedOut>
+          <div class="video-container"> <IFRAME [src]="server(link.url)" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME></div>
+          </ng-template>
+      
+      </div>
     </div>
 </div>
 
