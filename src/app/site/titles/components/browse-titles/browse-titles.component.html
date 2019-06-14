@@ -86,7 +86,6 @@
                     </mat-grid-list>
                 </form>
             </div>
-
             <div class="header">
                 <h1 trans>Browse</h1>
                 <div class="applied-filters">
@@ -100,8 +99,14 @@
                     </button>
                 </div>
                 <browse-titles-sort-widget [formControl]="form.get('order')"></browse-titles-sort-widget>
+                <button mat-button [matMenuTriggerFor]="menu">Nézet  <mat-icon svgIcon="keyboard-arrow-down"  class="arrow-icon"></mat-icon></button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item (click)="isOn= false">Poszter kártya nézet</button>
+                  <button mat-menu-item (click)="isOn= true">Háttérkép kártya nézet</button>
+                </mat-menu>
             </div>
-            <media-grid [items]="titles$ | async" class="partial-width small-titles"></media-grid>
+            <media-grid *ngIf="!isOn" [items]="titles$ | async" class="partial-width small-titles"></media-grid>
+            <media-grid2 *ngIf="isOn" [items]="titles$ | async" class="partial-width small-titles"></media-grid2>
             <no-results-message *ngIf="doesNotHaveResults$ | async">
                 <span primary-text trans>Nothing To Display.</span>
                 <span secondary-text trans>Seems like no titles match specified filters.</span>

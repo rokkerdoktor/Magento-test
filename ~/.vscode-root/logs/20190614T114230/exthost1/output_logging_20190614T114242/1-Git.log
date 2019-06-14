@@ -1,0 +1,412 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html/mate/sourcecode
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/titles.service.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/componenets/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/componenets/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/titles.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/site.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/site.module.ts
+> git show :src/common/core/bootstrapper.service.ts
+> git check-ignore -z --stdin
+> git show :src/app/site/site.module.ts
+> git show :src/app/site/titles/title-page-container/title-links/title-links.component.html
+> git show :src/app/site/site.module.ts
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.scss
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.scss
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.scss
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git rev-list --left-right master...refs/remotes/origin/master
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.ts
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git check-ignore -z --stdin
+> git show :src/app/models/Model.ts
+> git ls-files --stage -- src/app/models/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/models/Model.ts
+> git ls-files --stage -- src/app/models/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component2.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git check-ignore -z --stdin
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component2.scss
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.ts
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component.html
+> git ls-files --stage -- src/app/site/titles/components/browse-titles/view-titles-switch-widget/
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.scss
+> git show :src/app/site/titles/components/browse-titles/browse-titles-sort-widget/browse-titles-sort-widget.component.html
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.ts
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.html
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.ts
+> git show :src/app/site/titles/components/browse-titles/browse-titles.component.html
+> git show :src/app/site/homepage/homepage.component.html
+> git show :src/app/site/homepage/homepage.component.scss
+> git show :src/app/site/lists/list-page/list-page.component.html
+> git show :src/app/site/homepage/homepage.component.scss
+> git show :src/app/site/lists/list-page/list-page.component.html
+> git show :src/app/site/people/person-page/person-page.component.html
+> git show :src/app/site/search/search-page/search-page.component.html
+> git show :src/app/site/shared/media-grid/media-grid.component.scss
+> git check-ignore -z --stdin
+> git show :src/app/site/shared/media-grid/media-grid.component.html
+> git show :src/app/site/shared/media-grid/media-grid.component.ts
+> git show :src/app/site/shared/media-grid/media-grid.component.html
+> git show :src/app/site/shared/media-grid/media-grid.component.scss
+> git show :src/app/site/shared/media-grid/media-grid.component.ts
+> git show :src/app/site/shared/media-grid/media-grid.component.scss
+> git show :src/app/site/shared/media-grid/media-grid.component.html
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin

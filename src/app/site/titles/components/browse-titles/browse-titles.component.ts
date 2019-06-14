@@ -25,6 +25,7 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
     qualityList: string[] = ['DVD Minőség', 'Mozis'];
     lanList: string[] = ['Magyar', 'Angol'];
     gridcols: any = 4;
+    isOn:any;
     public show_dialog : boolean = false;
     @ViewChild('genreList') genreList: MatSelectionList;
     @Select(BrowseTitleState.titles) titles$: Observable<Title[]>;

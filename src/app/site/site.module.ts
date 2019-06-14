@@ -75,6 +75,8 @@ import {AppHammerGestureConfig} from './app-hammer-gesture-config';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { TitleLinksComponent } from './titles/title-page-container/title-links/title-links.component';
 import { LinkplayerComponent } from './linkplayer/linkplayer.component';
+import { ViewTitlesSwitchWidgetComponent } from './titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component';
+import { MediaGrid2Component } from './shared/media-grid2/media-grid2.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -160,6 +162,8 @@ import { LinkplayerComponent } from './linkplayer/linkplayer.component';
         ImportMediaModalComponent,
         TitleLinksComponent,
         LinkplayerComponent,
+        ViewTitlesSwitchWidgetComponent,
+        MediaGrid2Component,
     ],
     entryComponents: [
         PlayerComponent,
