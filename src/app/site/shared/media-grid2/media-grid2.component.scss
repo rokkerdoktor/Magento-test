@@ -1,0 +1,41 @@
+@import "../../../../scss/variables";
+
+media-grid2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .card{
+        padding-bottom:10px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin: 30px;
+        .image{
+            img {
+                width: 100%;
+            }
+        }
+        
+        .grid-container {
+            padding-left:15px;
+            padding-right: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "rating title title title" "rating title title title" "rating date date date";
+          }
+          
+          .rating { grid-area: rating; }
+          
+          .title {
+                padding-top:5px;
+            grid-area: title; width: 100%;
+            display: block;
+            font-weight: 600;
+            font-size: 1.1em;
+            line-height: 1.1em;}
+          
+          .date { grid-area: date;     color: rgba(0,0,0,0.6);
+            line-height: 1em;}
+        
+    }
+
+}

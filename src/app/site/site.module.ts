@@ -77,6 +77,7 @@ import { TitleLinksComponent } from './titles/title-page-container/title-links/t
 import { LinkplayerComponent } from './linkplayer/linkplayer.component';
 import { ViewTitlesSwitchWidgetComponent } from './titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component';
 import { MediaGrid2Component } from './shared/media-grid2/media-grid2.component';
+import { LinkSubmitPanelComponent } from './titles/components/link-submit-panel/link-submit-panel.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -164,6 +165,7 @@ import { MediaGrid2Component } from './shared/media-grid2/media-grid2.component'
         LinkplayerComponent,
         ViewTitlesSwitchWidgetComponent,
         MediaGrid2Component,
+        LinkSubmitPanelComponent,
     ],
     entryComponents: [
         PlayerComponent,

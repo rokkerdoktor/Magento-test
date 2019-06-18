@@ -43,7 +43,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/var/www/html/mate/files",
+                                        "fsPath": "/var/www/html/alfa",
+                                        "external": "file:///var/www/html/alfa",
+                                        "path": "/var/www/html/alfa",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/var/www/html/alfa"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///var/www/html/mate/files",
                                         "path": "/var/www/html/mate/files",
                                         "scheme": "file"
@@ -1372,9 +1383,10 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www/html/mate",
+    "pickerWorkingDir": "/var/www/html",
     "openedPathsList": {
         "workspaces3": [
+            "file:///var/www/html/alfa",
             "file:///var/www/html/mate/files",
             "file:///var/www/html/mate/sourcecode",
             "file:///var/www/html/julius"
@@ -1383,14 +1395,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///var/www/html/mate/sourcecode",
-            "backupPath": "/var/www/html/mate/sourcecode/~/.vscode-root/Backups/498f91843b9b1bc44172bb8bd72222fd",
+            "folder": "file:///var/www/html/alfa",
+            "backupPath": "/var/www/html/mate/sourcecode/~/.vscode-root/Backups/849b9fa8ee650a76e1bcf10efcb2f4f4",
             "uiState": {
                 "mode": 0,
-                "x": 0,
+                "x": 1920,
                 "y": 27,
                 "width": 1920,
-                "height": 1053
+                "height": 1026
             }
         },
         "openedWindows": []
