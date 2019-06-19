@@ -1,10 +1,20 @@
 
 <div class="card" *ngFor="let item of items" [routerLink]="urls.mediaItem(item)">
-  <div class="image"><img class="backdrop" [src]="item.backdrop"></div>
-    <div class="grid-container">
-        <div class="rating">{{item.rating}}</div>
-        <div class="title">{{item.name}}</div>
-        <div class="date">{{item.release_date}}</div>
+  <div class="image"><img class="backdrop" [src]="item.backdrop">
+  <div class="title">
+    <h4>Film</h4>{{item.name}} <span>{{item.year}}</span></div>
+  </div>
+    <div class="action">
+      <div class="left">
+          <div [matTooltip]="'Add a kedvenceidhez' | trans" class="addtowatchlist"><mat-icon svgIcon="add"></mat-icon></div>
+          <div [matTooltip]="'Online film megtekintés' | trans" class="play">
+              <mat-icon svgIcon="play-arrow"></mat-icon>
+          </div>
+      </div>
+      <div class="right">
+          <div [matTooltip]="'Értékeld' | trans" class="heart"><mat-icon svgIcon="thumb-up"></mat-icon> </div>
+          <div class="text">{{((item.rating/10)*100).toFixed(0)}}%</div>
+      </div>
       </div>
 
 </div>

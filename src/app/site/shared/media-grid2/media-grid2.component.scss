@@ -1,41 +1,151 @@
 @import "../../../../scss/variables";
-
+@import url('https://trakt.tv//assets/ProximaNova-Reg-webfont-81b5348e86e80fed84955e25614f2481.woff');
 media-grid2 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
     .card{
-        padding-bottom:10px;
         cursor: pointer;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin: 30px;
         .image{
+            position: relative;
+            h4{
+                display: table;
+                background-color: #ed1c24;
+                color: #fff;
+                font-size: 11px;
+                display: inline-block;
+                padding: 3px 5px;
+                margin: 0 5px 5px 0;
+                font-family: proxima nova semibold;
+                height: auto;
+                text-transform: none;
+            }
+            .title{
+            position:absolute;
+            bottom: 10px;
+            left: 12px;
+            right: 12px;
+            font-family: proxima nova semibold;
+            color: #fff;
+            text-shadow: 0 0 20px #000;
+            font-size: 18px;
+            margin: 0;
+            text-align: left;
+            white-space: normal;
+            height: auto;
+            overflow: visible;
+                span{ 
+                       font-family: proxima nova;
+                    font-size: 14px;
+                    color: #999;}
+            }
             img {
                 width: 100%;
             }
         }
         
-        .grid-container {
-            padding-left:15px;
-            padding-right: 15px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "rating title title title" "rating title title title" "rating date date date";
-          }
-          
-          .rating { grid-area: rating; }
-          
-          .title {
-                padding-top:5px;
-            grid-area: title; width: 100%;
-            display: block;
-            font-weight: 600;
-            font-size: 1.1em;
-            line-height: 1.1em;}
-          
-          .date { grid-area: date;     color: rgba(0,0,0,0.6);
-            line-height: 1em;}
-        
+        .action{
+            padding-right: 10px;
+            padding-left:10px;
+            width:100%;
+            height:40px;
+            transition: .5s;
+            .left{
+                display: inline-block;
+                float:left;
+                .addtowatchlist{
+                    display: inline-block;
+                    mat-icon{
+                        width: 35px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        float: left;
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 1.7em;
+                        text-decoration: none;
+                        color: #8e44ad;
+                    }
+                    
+                }
+                .addtowatchlist:hover{
+                    display: inline-block;
+                    background-color: #8e44ad;
+                    mat-icon{
+                        color: #fff;
+                    }
+                    
+                }
+                .play{
+                    display: inline-block;
+                    mat-icon{
+                        width: 35px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        float: left;
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 1.7em;
+                        text-decoration: none;
+                        color: #aaa;
+                    }
+                }
+                .play:hover{
+                    background-color: #aaa;
+                    display: inline-block;
+                    mat-icon{
+                        color: #fff;
+                    }
+                }
+            }
+            .right{
+                float: right;
+                .text{
+                    float: right;
+                    font-size: 1.7em;
+                    color:#000;
+                    display: block;
+                    line-height: 40px;
+                    height: 40px;
+                }
+                .heart{
+                    float: right;
+                    display: inline-block;
+                    mat-icon{
+                        width: 35px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        float: left;
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 1.7em;
+                        text-decoration: none;
+                        color: #16a085;
+                    }
+                }
+                .heart:hover{
+                    background-color:#16a085;
+                    float: right;
+                    display: inline-block;
+                    mat-icon{
+                        width: 35px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        float: left;
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 1.7em;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 
 }
+
