@@ -24,7 +24,7 @@ import {Toast} from '../../../../../common/core/ui/toast.service';
 })
 export class TitleLinksComponent {
   @Select(TitleState.links) links$: Observable<Link>;
-  
+  @Select(TitleState.episode) episode$: Observable<Episode>;
   constructor(
     public urls: TitleUrlsService,
     private settings: Settings,

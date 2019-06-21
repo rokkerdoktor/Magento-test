@@ -6,7 +6,15 @@
     <title-primary-details-panel [item]="episode"></title-primary-details-panel>
     <title-secondary-details-panel [item]="episode"></title-secondary-details-panel>
     <videos-panel [mediaItem]="episode" *ngIf="settings.get('titles.show_videos_panel')"></videos-panel>
-    <title-cast-panel></title-cast-panel>
+    <mat-tab-group color="accent" animationDuration="0ms">
+            <mat-tab [label]="'Links' | trans">
+                <title-links></title-links>
+            </mat-tab>
+            <mat-tab [label]="'Cast' | trans">
+                <title-cast-panel></title-cast-panel>
+            </mat-tab>
+
+    </mat-tab-group>
 </div>
 
 <footer></footer>

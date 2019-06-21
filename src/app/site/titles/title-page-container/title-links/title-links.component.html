@@ -1,17 +1,18 @@
+
 <ng-container >
-  <div class="linkcontainer">
+  <div *ngIf="episode$ | async as episode" class="linkcontainer">
     <div class="main">
         <div class="language">Nyelv</div>
         <div class="server">Videó megosztó</div>
         <div class="quality">Minőség</div>
         <div class="submit">Linket beküldte</div>
     </div>
-  <div class="row" *ngFor="let link of links$ | async">
-      <div class="language"><img src="{{nyelv(link.label)}}"></div>
-      <div class="server">{{server(link.url)}}</div>
-      <div class="quality">{{link.quality}}</div>
-      <div class="submit">{{link.user_name}}</div>
-      <a [routerLink]="['/links/',link.id]" ><div class="play">megtekintés</div></a>
+  <div  class="row" *ngFor="let link of links$ | async">
+            <div class="language"><img src="{{nyelv(link.label)}}"></div>
+            <div class="server">{{server(link.url)}}</div>
+            <div class="quality">{{link.quality}}</div>
+            <div class="submit">{{link.user_name}}</div>
+            <a [routerLink]="['/links/',link.id]" ><div class="play">megtekintés</div></a>
   </div>
   </div>
 </ng-container>
