@@ -1,0 +1,2 @@
+<div [matTooltip]="'Add a kedvenceidhez' | trans" (authClick)="addToWatchlist()" [class.hidden]="isInWatchlist()"  class="addtowatchlist"><mat-icon svgIcon="add"></mat-icon></div>
+<div [matTooltip]="'Törlés a kedvenceidből' | trans" (authClick)="removeFromWatchlist()" [class.hidden]="!isInWatchlist()"  class="addtowatchliston"><mat-icon svgIcon="close"></mat-icon></div>

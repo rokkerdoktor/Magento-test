@@ -1,0 +1,5 @@
+<div *ngIf="userRating$ | async as userRating; else rateThis" (authClick)="openRatingOverlay($event)" [matTooltip]="'Értékeld' | trans" class="heart"><mat-icon svgIcon="thumb-up"></mat-icon> </div>
+
+<ng-template #rateThis>
+    <div (authClick)="openRatingOverlay($event)" [matTooltip]="'Értékeld' | trans" class="heart"><mat-icon svgIcon="thumb-up"></mat-icon> </div>
+</ng-template>

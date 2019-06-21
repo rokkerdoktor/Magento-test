@@ -78,6 +78,8 @@ import { LinkplayerComponent } from './linkplayer/linkplayer.component';
 import { ViewTitlesSwitchWidgetComponent } from './titles/components/browse-titles/view-titles-switch-widget/view-titles-switch-widget.component';
 import { MediaGrid2Component } from './shared/media-grid2/media-grid2.component';
 import { LinkSubmitPanelComponent } from './titles/components/link-submit-panel/link-submit-panel.component';
+import { BrowseractionbuttonsComponent } from './titles/components/browseractionbuttons/browseractionbuttons.component';
+import { BrowseratingComponent } from './titles/components/browserating/browserating.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -166,6 +168,8 @@ import { LinkSubmitPanelComponent } from './titles/components/link-submit-panel/
         ViewTitlesSwitchWidgetComponent,
         MediaGrid2Component,
         LinkSubmitPanelComponent,
+        BrowseractionbuttonsComponent,
+        BrowseratingComponent,
     ],
     entryComponents: [
         PlayerComponent,
