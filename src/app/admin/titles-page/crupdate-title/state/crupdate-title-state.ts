@@ -352,10 +352,9 @@ export class CrupdateTitleState {
             tap(response => {
                 const seasons = ctx.getState().title.seasons.map(season => {
                     if (season.number === action.episode.season_number) {
-                        const episodes = season.episodes.map(episode => {
+                        season.episodes = season.episodes.map(episode => {
                             return episode.id === action.episode.id ? response.episode : episode;
                         });
-                        return {...season, episodes};
                     }
                     return season;
                 });
@@ -393,12 +392,11 @@ export class CrupdateTitleState {
             tap(response => {
                 const seasons = ctx.getState().title.seasons.map(season => {
                     if (season.number === action.episode.season_number) {
-                        const episodes = season.episodes.map(episode => {
+                        season.episodes = season.episodes.map(episode => {
                             return episode.id === action.episode.id ? response.episode : episode;
                         });
-                        return {...season, episodes};
                     }
-                    return season;
+                    return {...season};
                 });
 
                 ctx.patchState({title: {...ctx.getState().title, seasons}});

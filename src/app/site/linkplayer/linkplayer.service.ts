@@ -11,7 +11,7 @@ export class LinkplayerService {
 
 
     public get(id: number): BackendResponse<{link: Link}> {
-         return this.http.get('link/' + id); 
+         return this.http.get('linkplay/' + id); 
         /*return this.http.get('http://dev.mate/secure/link/'+ id); */
     }
 

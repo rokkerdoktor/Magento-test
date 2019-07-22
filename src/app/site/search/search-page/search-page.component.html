@@ -14,7 +14,7 @@
 
     <div class="type-container" *ngIf="(series$ | async).length">
         <div class="title" trans>Series</div>
-        <media-grid [items]="series$ | async" class="personh small-titles"></media-grid>
+        <media-grid [items]="series$ | async" class="person small-titles"></media-grid>
     </div>
 
     <div class="type-container" *ngIf="(people$ | async).length">

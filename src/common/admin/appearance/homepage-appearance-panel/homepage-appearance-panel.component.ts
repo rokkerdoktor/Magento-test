@@ -51,7 +51,7 @@ export class HomepageAppearancePanelComponent implements OnInit {
         this.http.get('lists', {listIds})
             .pipe(finalize(() => this.loading$.next(false)))
             .subscribe(response => {
-                this.homepageLists$.next(mapOrder(response.data, listIds, 'id'));
+                this.homepageLists$.next(response.pagination.data);
             });
     }
 
@@ -76,7 +76,7 @@ export class HomepageAppearancePanelComponent implements OnInit {
 
     private searchForList(query: string): Observable<HomeList[]> {
         return this.http.get('lists', {query, excludeSystem: true})
-            .pipe(map((response: any) => response.data));
+            .pipe(map((response: any) => response.pagination.data));
     }
 
     public removeList(list: HomeList) {

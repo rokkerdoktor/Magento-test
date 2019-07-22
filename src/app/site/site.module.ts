@@ -80,6 +80,7 @@ import { MediaGrid2Component } from './shared/media-grid2/media-grid2.component'
 import { LinkSubmitPanelComponent } from './titles/components/link-submit-panel/link-submit-panel.component';
 import { BrowseractionbuttonsComponent } from './titles/components/browseractionbuttons/browseractionbuttons.component';
 import { BrowseratingComponent } from './titles/components/browserating/browserating.component';
+import { TitleLinksubmitPanelComponent } from './titles/title-page-container/title-linksubmit-panel/title-linksubmit-panel.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -170,6 +171,7 @@ import { BrowseratingComponent } from './titles/components/browserating/browsera
         LinkSubmitPanelComponent,
         BrowseractionbuttonsComponent,
         BrowseratingComponent,
+        TitleLinksubmitPanelComponent,
     ],
     entryComponents: [
         PlayerComponent,

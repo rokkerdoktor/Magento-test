@@ -26,6 +26,10 @@ import { ReviewsPanelComponent } from './titles-page/crupdate-title/panels/revie
 import {VideosPageComponent} from './videos-page/videos-page.component';
 import {ListsPageComponent} from './lists-page/lists-page.component';
 import {MatProgressBarModule} from '@angular/material';
+import { LinkapprovedComponent } from './linkapproved/linkapproved.component';
+import { LinkPanelComponent } from './titles-page/crupdate-title/panels/link-panel/link-panel.component';
+import { LinkModalComponent } from './titles-page/crupdate-title/panels/link-panel/link-modal/link-modal.component';
+import { TestPanelComponent } from './titles-page/crupdate-title/panels/test-panel/test-panel.component';
 
 @NgModule({
     imports: [
@@ -70,9 +74,14 @@ import {MatProgressBarModule} from '@angular/material';
         ReviewsPanelComponent,
         VideosPageComponent,
         ListsPageComponent,
+        LinkapprovedComponent,
+        LinkPanelComponent,
+        LinkModalComponent,
+        TestPanelComponent,
     ],
     entryComponents: [
         CrupdateCreditModalComponent,
+        LinkModalComponent,
         CrupdateEpisodeModalComponent,
         CrupdateTagModalComponent,
     ],

@@ -6,6 +6,8 @@ import {Title} from '../../../models/title';
 import {ToggleGlobalLoader} from '../../../state/app-state-actions';
 import {Settings} from '../../../../common/core/config/settings.service';
 import {Image} from '../../../models/image';
+import {CurrentUser} from 'common/auth/current-user';
+import {AuthService} from 'common/auth/auth.service';
 import {OverlayPanel} from '../../../../common/core/ui/overlay-panel/overlay-panel.service';
 import {ImageGalleryOverlayComponent} from '../../shared/image-gallery-overlay/image-gallery-overlay.component';
 import {ViewportScroller} from '@angular/common';
@@ -23,6 +25,8 @@ export class TitlePageContainerComponent implements OnInit {
     @Select(TitleState.backdrop) backdropImage$: Observable<string>;
 
     constructor(
+        public currentUser: CurrentUser,
+        public auth: AuthService,
         private store: Store,
         public settings: Settings,
         private overlay: OverlayPanel,

@@ -98,7 +98,7 @@ export class BrowseTitleState {
 
     static queryParamsToFilters(params: object): BrowseTitlesQueryParams {
         const formValues = {};
-        const keys = ['links_language'];
+        const keys = ['genre'];
         Object.keys(params).forEach(key => {
             if ( ! params[key]) return;
 

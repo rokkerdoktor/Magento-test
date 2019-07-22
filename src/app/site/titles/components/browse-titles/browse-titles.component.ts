@@ -22,8 +22,8 @@ import {Settings} from '../../../../../common/core/config/settings.service';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnDestroy {
-    qualityList: string[] = ['DVD Minőség', 'Mozis'];
-    lanList: string[] = ['Magyar', 'Angol'];
+    qualityList: string[] = ['BDRip','DVD Minőség', 'DVD Minőség (mozis hanggal) ', 'HDRIP', 'R5', 'Mozis'];
+    lanList: string[] = ['Magyar', 'Angol', 'Angol, magyarfelirat', 'Egyéb','Egyéb, magyarfelirat'];
     gridcols: any = 4;
     isOn:any;
     public show_dialog : boolean = false;
@@ -39,18 +39,15 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
     private formSub: Subscription;
 
     public form = this.fb.group({
-        links_language: [],
-        links_quality: [],
-        type: [],
-        genre: [],
+        certification: [],
+        country: [],
         released: [],
         score: [],
-        country: [],
-        language: [],
         runtime: [],
-        certification: [],
         order: [],
-        onlyStreamable: [],
+        genre: [],
+        links_language: [],
+        links_quality: []
     });
 
     constructor(

@@ -17,6 +17,13 @@
             <mat-tab [label]="'Cast' | trans">
                 <title-cast-panel></title-cast-panel>
             </mat-tab>
+            <ng-container *ngIf="currentUser.isLoggedIn();">
+                <mat-tab [label]="'Link submit' | trans">
+                        <ng-template matTabContent>
+                            <title-linksubmit-panel></title-linksubmit-panel>
+                        </ng-template>
+                </mat-tab>
+            </ng-container>
             <mat-tab [label]="'Reviews' | trans" *ngIf="settings.get('titles.enable_reviews')">
                 <ng-template matTabContent>
                     <review-tab></review-tab>
