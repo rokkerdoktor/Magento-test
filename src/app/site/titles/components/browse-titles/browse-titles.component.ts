@@ -39,6 +39,7 @@ export class BrowseTitlesComponent extends InfiniteScroll implements OnInit, OnD
     private formSub: Subscription;
 
     public form = this.fb.group({
+        type: [],
         certification: [],
         country: [],
         released: [],
