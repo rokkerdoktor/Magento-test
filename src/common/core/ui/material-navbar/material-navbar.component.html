@@ -12,7 +12,7 @@
 
     <custom-menu [position]="menuPosition" *ngIf="!breakpoints.isTablet$.value"></custom-menu>
 
-    <ng-container *ngIf="(breakpoints.isTablet$ | async) && !showToggleButton">
+    <ng-container>
         <button class="toggle-sidebar-button" mat-icon-button [matMenuTriggerFor]="menu">
             <mat-icon svgIcon="menu"></mat-icon>
         </button>
